@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", 'sans-serif';
+    background-image: url('../src/assets/timer_bgggg.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.timer_input {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.timer_input input {
+    padding: 10px 0;
+    border-radius: 8px;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.timer_display {
+    text-align: center;
+}
+
+.timer_controls {
+    text-align: center;
+    padding-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+button.btn_pause {
+    color: red;
+    margin: 0 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    border-style: none;
+}
+
+button.btn_start {
+    font-size: 14px;
+    border-radius: 4px;
+    border-style: none;
+}
+
+button.btn_reset {
+    font-size: 14px;
+    border-radius: 4px;
+    border-style: none;
+    color: #f79300;
+}
+
+button.btn_start:hover {
+    color: #fff;
+    background-color: #24e563;
+}
+
+button.btn_reset:hover {
+    color: #fff;
+    background-color: #df4545;
+}
+
+button.btn_pause:hover {
+    background-color: #f79300;
+    color: #fff;
+}
