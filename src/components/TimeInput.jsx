@@ -12,7 +12,7 @@ export default function TimerInput({ setInitialTime, setRemainingTime, isRunning
   return (
     <div className='timer_input'>
       <label>
-        Set Timer (seconds):
+        Set Timer in <b>seconds</b>:
         <input type="number" onChange={handleInputChange} disabled={isRunning} />
       </label>
     </div>
