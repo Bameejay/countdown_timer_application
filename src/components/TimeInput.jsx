@@ -1,4 +1,3 @@
-// src/TimerInput.js
 import PropTypes from 'prop-types';
 
 export default function TimerInput({ setInitialTime, setRemainingTime, isRunning }) {

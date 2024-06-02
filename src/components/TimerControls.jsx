@@ -1,4 +1,3 @@
-// src/TimerControls.js
 import PropTypes from 'prop-types';
 
 export default function TimerControls({ startTimer, pauseTimer, resetTimer, isRunning, remainingTime }) {

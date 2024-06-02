@@ -1,4 +1,3 @@
-// src/App.js
 import { useState, useRef, useEffect } from 'react';
 import TimerInput from '../src/components/TimeInput';
 import TimerDisplay from '../src/components/TimeDisplay';
@@ -20,7 +19,7 @@ export default function App() {
     } else if (remainingTime === 0 && isRunning) {
       clearInterval(intervalRef.current);
       setIsRunning(false);
-      setShowConfetti(true); // Show confetti when the countdown finishes
+      setShowConfetti(true); 
     }
     return () => clearInterval(intervalRef.current);
   }, [isRunning, remainingTime]);
@@ -28,7 +27,7 @@ export default function App() {
   const startTimer = () => {
     if (remainingTime > 0) {
       setIsRunning(true);
-      setShowConfetti(false); // Hide confetti when restarting the timer
+      setShowConfetti(false); 
     }
   };
 
@@ -41,13 +40,13 @@ export default function App() {
     setIsRunning(false);
     clearInterval(intervalRef.current);
     setRemainingTime(initialTime);
-    setShowConfetti(false); // Hide confetti when resetting the timer
+    setShowConfetti(false); 
   };
 
   return (
     <div className='container'>
       <div>
-      <h1>Let the Countdown Begin in Seconds</h1>
+      <h1>Let the Countdown Begin</h1>
       <TimerInput className="timer-input" setInitialTime={setInitialTime} setRemainingTime={setRemainingTime} isRunning={isRunning} />
       <TimerDisplay remainingTime={remainingTime} />
       <TimerControls startTimer={startTimer} pauseTimer={pauseTimer} resetTimer={resetTimer} isRunning={isRunning} remainingTime={remainingTime} />

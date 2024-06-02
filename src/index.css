@@ -7,11 +7,10 @@
 
 body {
     font-family: "Quicksand", 'sans-serif';
-    background-image: url('../src/assets/timer_bgggg.jpg');
+    background-image: url('../src/assets/timer_bgg.jpg');
     background-position: right center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.1);
     width: 100vw;
     height: 100vh;
 }
@@ -59,12 +58,7 @@ button.btn_pause {
     font-size: 14px;
     border-radius: 4px;
     border-style: none;
-}
-
-button.btn_start {
-    font-size: 14px;
-    border-radius: 4px;
-    border-style: none;
+    font-weight: bold;
 }
 
 button.btn_reset {
@@ -72,19 +66,54 @@ button.btn_reset {
     border-radius: 4px;
     border-style: none;
     color: #f79300;
-}
-
-button.btn_start:hover {
-    color: #fff;
-    background-color: #24e563;
+    font-weight: bold;
 }
 
 button.btn_reset:hover {
     color: #fff;
     background-color: #df4545;
+    cursor: pointer;
 }
 
 button.btn_pause:hover {
     background-color: #f79300;
     color: #fff;
+    cursor: pointer;
+}
+
+.timer_input>label {
+    font-weight: bold;
+}
+
+.timer_input>label>input[type=number] {
+    color: #000;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.timer_input>label>input[type=number]:focus {
+    border: none;
+}
+
+.remaining-time {
+    background-color: #fff;
+    color: #000;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+button.btn_start {
+    font-size: 14px;
+    border-radius: 4px;
+    border-style: none;
+    color: #24e563;
+    background: #fff;
+    font-weight: bold;
+}
+
+button.btn_start:hover {
+    color: #fff;
+    background-color: #24e563;
+    cursor: pointer;
 }
