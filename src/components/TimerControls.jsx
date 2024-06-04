@@ -4,10 +4,11 @@ export default function TimerControls({ startTimer, pauseTimer, resetTimer, isRu
   return (
     <div className='timer_controls'>
       {/* <button className='btn_start' onClick={startTimer} disabled={isRunning || remainingTime === 0}>Start</button> */}
-      <button className='btn_start' onClick={startTimer} disabled={!isRunning || remainingTime === 0}>
+      <button className='btn_start' onClick={startTimer} disabled={isRunning || remainingTime === 0}><span className="btn_text">Start</span><i className="btn_icon fas fa-play"></i></button>
+      {/* <button className='btn_start' onClick={startTimer} disabled={!isRunning || remainingTime === 0}>
         <span className="btn_text">Start</span>
         <i className="btn_icon fas fa-play"></i>
-      </button>
+      </button> */}
 
       {/* <button className='btn_pause' onClick={pauseTimer} disabled={!isRunning}>Pause</button> */}
       <button className='btn_pause' onClick={pauseTimer} disabled={!isRunning || remainingTime === 0}>
