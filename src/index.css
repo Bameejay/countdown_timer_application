@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import '@fortawesome/fontawesome-free/css/all.min.css';
 * {
     padding: 0;
     margin: 0;
@@ -52,37 +53,77 @@ button {
     padding: 10px 20px;
 }
 
-button.btn_pause {
+
+/* Reset Button */
+
+.btn_reset {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    border-style: none;
+    color: #007bff;
+    background-color: #fff;
+    box-shadow: 4px 4px 0px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    width: 60px;
+    padding: 10px 20px;
+}
+
+.btn_reset .btn_icon {
+    display: none;
+    font-size: 14px;
+}
+
+.btn_reset:hover .btn_text {
+    display: none;
+}
+
+.btn_reset:hover .btn_icon {
+    display: inline;
+}
+
+
+/* Pause Button */
+
+.btn_pause {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    border-style: none;
+    color: #FF4500;
+    background-color: #fff;
+    box-shadow: 4px 4px 0px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    width: 60px;
+    padding: 10px 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.btn_pause .btn_icon {
+    display: none;
+    font-size: 14px;
+}
+
+.btn_pause:hover .btn_text {
+    display: none;
+}
+
+.btn_pause:hover .btn_icon {
+    display: inline;
     color: red;
-    margin: 0 20px;
-    font-size: 14px;
-    border-radius: 4px;
-    border-style: none;
-    font-weight: bold;
-}
-
-button.btn_reset {
-    font-size: 14px;
-    border-radius: 4px;
-    border-style: none;
-    color: #f79300;
-    font-weight: bold;
-}
-
-button.btn_reset:hover {
-    color: #fff;
-    background-color: #df4545;
-    cursor: pointer;
-}
-
-button.btn_pause:hover {
-    background-color: #f79300;
-    color: #fff;
-    cursor: pointer;
-}
-
-.timer_input>label {
-    font-weight: bold;
 }
 
 .timer_input>label>input[type=number] {
@@ -103,17 +144,38 @@ button.btn_pause:hover {
     border-radius: 6px;
 }
 
-button.btn_start {
+
+/* Start Button */
+
+.btn_start {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
     font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
     border-radius: 4px;
     border-style: none;
-    color: #24e563;
-    background: #fff;
-    font-weight: bold;
+    color: #28a745;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    width: 60px;
+    padding: 10px 20px;
+    box-shadow: #28a745;
+    box-shadow: 4px 4px 0px 2px rgba(0, 0, 0, 0.5);
 }
 
-button.btn_start:hover {
-    color: #fff;
-    background-color: #24e563;
-    cursor: pointer;
+.btn_start .btn_icon {
+    display: none;
+    font-size: 14px;
+}
+
+.btn_start:hover .btn_text {
+    display: none;
+}
+
+.btn_start:hover .btn_icon {
+    display: inline;
 }
